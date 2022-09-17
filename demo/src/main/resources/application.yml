@@ -4,11 +4,10 @@ spring:
   application:
     name: demo
   config:
-    import: optional:configserver:http://localhost:8888
+    import: configserver:http://localhost:8888
     fail-fast: true
   cloud:
     config:
-      uri: config-server
       username: root
       password: s3cr3t
       discovery:
