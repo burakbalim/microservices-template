@@ -5,6 +5,10 @@ metadata:
 build:
   platforms: ["linux/amd64"]
   artifacts:
+  - image: config-server
+    context: config-server
+    buildpacks:
+      builder: gcr.io/buildpacks/builder:v1
   - image: demo
     context: demo
     buildpacks:
@@ -16,5 +20,6 @@ build:
 deploy:
   kubectl:
     manifests:
-    - eureka/deployment.yaml
+    - config-server/deployment.yaml
     - demo/deployment.yaml
+    - eureka/deployment.yaml
