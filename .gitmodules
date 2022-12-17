@@ -1,6 +1,6 @@
 [submodule "config-server"]
 	path = config-server
-	url = git@github.com:burakbalim/config-server.git
+	url = https://github.com/burakbalim/config-server.git
 [submodule "config-repo"]
 	path = config-repo
-	url = git@github.com:burakbalim/config-repo.git
+	url = https://github.com/burakbalim/config-repo.git
